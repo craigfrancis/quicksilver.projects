@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		441EFEA615E5025100F88C5B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441EFEA515E5025100F88C5B /* Cocoa.framework */; };
+		441EFEAC15E5025100F88C5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 441EFEAA15E5025100F88C5B /* InfoPlist.strings */; };
+		441EFEB815E5025100F88C5B /* ProjectsAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 441EFEB715E5025100F88C5B /* ProjectsAction.m */; };
+		441EFEBB15E5025100F88C5B /* ProjectsSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 441EFEBA15E5025100F88C5B /* ProjectsSource.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		441EFEA215E5025100F88C5B /* Projects.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Projects.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		441EFEA515E5025100F88C5B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		441EFEA915E5025100F88C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		441EFEAB15E5025100F88C5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		441EFEAE15E5025100F88C5B /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		441EFEAF15E5025100F88C5B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		441EFEB015E5025100F88C5B /* Developer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
+		441EFEB115E5025100F88C5B /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
+		441EFEB215E5025100F88C5B /* Quicksilver.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
+		441EFEB315E5025100F88C5B /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		441EFEB615E5025100F88C5B /* ProjectsAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectsAction.h; sourceTree = "<group>"; };
+		441EFEB715E5025100F88C5B /* ProjectsAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectsAction.m; sourceTree = "<group>"; usesTabs = 1; };
+		441EFEB915E5025100F88C5B /* ProjectsSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectsSource.h; sourceTree = "<group>"; };
+		441EFEBA15E5025100F88C5B /* ProjectsSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectsSource.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		441EFE9F15E5025100F88C5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441EFEA615E5025100F88C5B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		441EFE9615E5025100F88C5B = {
+			isa = PBXGroup;
+			children = (
+				441EFEA715E5025100F88C5B /* Projects */,
+				441EFEA415E5025100F88C5B /* Frameworks */,
+				441EFEA315E5025100F88C5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		441EFEA315E5025100F88C5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				441EFEA215E5025100F88C5B /* Projects.qsplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		441EFEA415E5025100F88C5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				441EFEA515E5025100F88C5B /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		441EFEA715E5025100F88C5B /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				441EFEB615E5025100F88C5B /* ProjectsAction.h */,
+				441EFEB715E5025100F88C5B /* ProjectsAction.m */,
+				441EFEB915E5025100F88C5B /* ProjectsSource.h */,
+				441EFEBA15E5025100F88C5B /* ProjectsSource.m */,
+				441EFEAD15E5025100F88C5B /* Configuration */,
+				441EFEA815E5025100F88C5B /* Supporting Files */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		441EFEA815E5025100F88C5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				441EFEA915E5025100F88C5B /* Info.plist */,
+				441EFEAA15E5025100F88C5B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		441EFEAD15E5025100F88C5B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				441EFEAE15E5025100F88C5B /* Common.xcconfig */,
+				441EFEAF15E5025100F88C5B /* Debug.xcconfig */,
+				441EFEB015E5025100F88C5B /* Developer.xcconfig */,
+				441EFEB115E5025100F88C5B /* QSPlugIn.xcconfig */,
+				441EFEB215E5025100F88C5B /* Quicksilver.pch */,
+				441EFEB315E5025100F88C5B /* Release.xcconfig */,
+			);
+			name = Configuration;
+			path = /private/tmp/QS/Configuration;
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		441EFEA115E5025100F88C5B /* Projects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 441EFEBE15E5025100F88C5B /* Build configuration list for PBXNativeTarget "Projects" */;
+			buildPhases = (
+				441EFE9D15E5025100F88C5B /* ShellScript */,
+				441EFE9E15E5025100F88C5B /* Sources */,
+				441EFE9F15E5025100F88C5B /* Frameworks */,
+				441EFEA015E5025100F88C5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Projects;
+			productName = Projects;
+			productReference = 441EFEA215E5025100F88C5B /* Projects.qsplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		441EFE9815E5025100F88C5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Craig Francis";
+			};
+			buildConfigurationList = 441EFE9B15E5025100F88C5B /* Build configuration list for PBXProject "Projects" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 441EFE9615E5025100F88C5B;
+			productRefGroup = 441EFEA315E5025100F88C5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				441EFEA115E5025100F88C5B /* Projects */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		441EFEA015E5025100F88C5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441EFEAC15E5025100F88C5B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		441EFE9D15E5025100F88C5B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"$QS_BUILD_ROOT/Tools/bltrversion\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		441EFE9E15E5025100F88C5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441EFEB815E5025100F88C5B /* ProjectsAction.m in Sources */,
+				441EFEBB15E5025100F88C5B /* ProjectsSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		441EFEAA15E5025100F88C5B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				441EFEAB15E5025100F88C5B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		441EFEBC15E5025100F88C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 441EFEAF15E5025100F88C5B /* Debug.xcconfig */;
+			buildSettings = {
+				INSTALL_PATH = /Quicksilver.app/Contents/PlugIns;
+				QS_APP_CONTENTS_FOLDER = "$(CONFIGURATION_BUILD_DIR)/Quicksilver.app/Contents";
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		441EFEBD15E5025100F88C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 441EFEB315E5025100F88C5B /* Release.xcconfig */;
+			buildSettings = {
+				INSTALL_PATH = /Quicksilver.app/Contents/PlugIns;
+				QS_APP_CONTENTS_FOLDER = "$(CONFIGURATION_BUILD_DIR)/Quicksilver.app/Contents";
+			};
+			name = Release;
+		};
+		441EFEBF15E5025100F88C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 441EFEB115E5025100F88C5B /* QSPlugIn.xcconfig */;
+			buildSettings = {
+				INSTALL_PATH = /Quicksilver.app/Contents/PlugIns;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				QS_APP_CONTENTS_FOLDER = "$(CONFIGURATION_BUILD_DIR)/Quicksilver.app/Contents";
+			};
+			name = Debug;
+		};
+		441EFEC015E5025100F88C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 441EFEB115E5025100F88C5B /* QSPlugIn.xcconfig */;
+			buildSettings = {
+				INSTALL_PATH = /Quicksilver.app/Contents/PlugIns;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		441EFE9B15E5025100F88C5B /* Build configuration list for PBXProject "Projects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				441EFEBC15E5025100F88C5B /* Debug */,
+				441EFEBD15E5025100F88C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		441EFEBE15E5025100F88C5B /* Build configuration list for PBXNativeTarget "Projects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				441EFEBF15E5025100F88C5B /* Debug */,
+				441EFEC015E5025100F88C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 441EFE9815E5025100F88C5B /* Project object */;
+}
