@@ -4,11 +4,11 @@ quicksilver.projects
 If you have a folder per website/project, using a format such as:
 
 	project/
-		app - Website
-		resources - Random files
-		httpd - Apache config files
+		app/ - Website
+		resources/ - Random files
+		httpd/ - Apache config files
 
-Where you typically just want to automatically open "app" in TextMate 1.
+Where you typically just want to automatically open the "app" sub-folder in TextMate 1.
 
 With this plugin, you can start typing the project name in QuickSilver, then automatically open its "app" (or "public") folder... or press the "/" key and choose which of the sub-folders to open.
 
