@@ -3,10 +3,10 @@ quicksilver.projects
 
 If you have a folder per website/project, using a format such as:
 
-project/
-	app - Website
-	resources - Random files
-	httpd - Apache config files
+	project/
+		app - Website
+		resources - Random files
+		httpd - Apache config files
 
 Where you typically just want to automatically open "app" in TextMate 1.
 
