@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1</string>
+	<string>2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>C</string>
+	<string>5</string>
 	<key>QSActions</key>
 	<dict>
 		<key>Edit Folder</key>
@@ -55,7 +55,7 @@
 		<key>extendedDescription</key>
 		<string>HTML formatted documentation for this plug-in.</string>
 		<key>icon</key>
-		<string>KEXT</string>
+		<string>com.macromates.textmate</string>
 	</dict>
 	<key>QSPresetAdditions</key>
 	<array>
@@ -66,6 +66,8 @@
 			<string>com.macromates.textmate</string>
 			<key>name</key>
 			<string>Projects</string>
+			<key>requiresBundle</key>
+			<string>com.apple.AddressBook</string>
 			<key>source</key>
 			<string>QSProjectsSource</string>
 		</dict>
@@ -91,6 +93,16 @@
 		<dict>
 			<key>QSProjectsSource</key>
 			<string>QSProjectsSource</string>
+		</dict>
+		<key>QSTypeDefinitions</key>
+		<dict>
+			<key>QSProjectsType</key>
+			<dict>
+				<key>icon</key>
+				<string>com.macromates.textmate</string>
+				<key>name</key>
+				<string>Projects</string>
+			</dict>
 		</dict>
 	</dict>
 </dict>

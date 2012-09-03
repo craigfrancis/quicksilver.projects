@@ -9,6 +9,9 @@
 
 @implementation QSProjectsSource
 
+- (BOOL)usesGlobalSettings {return YES;}
+- (BOOL)scanInMainThread { return YES;}
+
 - (BOOL)indexIsValidFromDate:(NSDate *)indexDate forEntry:(NSDictionary *)theEntry
 {
 	return NO;
@@ -43,11 +46,13 @@
 			if (![projectName isEqualToString: @"a"] && ![[projectName substringWithRange: NSMakeRange (0, 1)] isEqualToString: @"."]) {
 			
 				newObject=[QSObject objectWithName:projectName];
+				[newObject setIdentifier:[url absoluteString]];
+                [newObject setDetails:[url absoluteString]];
+                [newObject setIcon:[QSResourceManager imageNamed:@"com.macromates.textmate"]];
 				[newObject setObject:@"Project" forType:QSProjectsType];
 				[newObject setObject:@"project" forMeta:@"type"];
 				[newObject setObject:url forMeta:@"url"];
 				[newObject setObject:projectName forMeta:@"name"];
-				[newObject setIdentifier:[url absoluteString]];
 				[objects addObject:newObject];
 
 			}
@@ -89,12 +94,14 @@
 			if (![[folderName substringWithRange: NSMakeRange (0, 1)] isEqualToString: @"."]) {
 
 				newObject=[QSObject objectWithName:folderName];
+				[newObject setParentID:[object identifier]];
+				[newObject setIdentifier:[url absoluteString]];
+                [newObject setDetails:[url absoluteString]];
+                [newObject setIcon:[QSResourceManager imageNamed:@"com.macromates.textmate"]];
 				[newObject setObject:@"Project Folder" forType:QSProjectsType];
 				[newObject setObject:@"folder" forMeta:@"type"];
 				[newObject setObject:url forMeta:@"url"];
                 [newObject setObject:projectName forMeta:@"name"];
-				[newObject setIdentifier:[url absoluteString]];
-				[newObject setParentID:[object identifier]];
 				[objects addObject:newObject];
 
 			}
