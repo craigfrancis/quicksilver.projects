@@ -1,0 +1,235 @@
+TProjects
+v5
+r1
+cCheck dependencies
+cCompileC build/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsAction.o /Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsSource.o /Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c00000000501054EE0000000000006730
+t1343247598
+s26416
+
+N/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.h
+c00000000503785A50000000000000098
+t1345815973
+s152
+
+N/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m
+c00000000503785A500000000000011F4
+t1345815973
+s4596
+i"ProjectsAction.h"
+
+N/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m
+c00000000503785A50000000000000C11
+t1345815973
+s3089
+
+N/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/en.lproj/InfoPlist.strings
+c00000000503785A5000000000000002D
+t1345815973
+s45
+
+N/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Projects.build/Release/Projects.build/Objects-normal/i386/Projects.LinkFileList
+c000000005044C2770000000000000116
+t1346683511
+s278
+
+N/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsAction.o
+t2
+s0
+
+N/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsSource.o
+t2
+s0
+
+N/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Release/Projects.bundle
+t2
+s0
+
+N/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Release/Projects.bundle/Contents/MacOS/Projects
+t2
+s0
+
+N/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Release/Projects.bundle/Contents/Resources/en.lproj/InfoPlist.strings
+t2
+s0
+
+CBuild AST from /Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m
+r0
+
+CBuild AST from /Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesc0234af7f9f4b541^9f3e4ef7f9f4b541^-252"The file “Release.xcconfig” couldn’t be opened because there is no such file. (/tmp/QS/Configuration/Release.xcconfig)The file “QSPlugIn.xcconfig” couldn’t be opened because there is no such file. (/tmp/QS/Configuration/QSPlugIn.xcconfig)2(21%IDEActivityLogMessage2@124"The file “Release.xcconfig” couldn’t be opened because there is no such file. (/tmp/QS/Configuration/Release.xcconfig)-368376311#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--2@126"The file “QSPlugIn.xcconfig” couldn’t be opened because there is no such file. (/tmp/QS/Configuration/QSPlugIn.xcconfig)-368376311#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-27"Dependency Analysis Warning--0#1#0#--18"Check dependencies36"023DEF48-110C-4A37-9EE9-80B917810188-
+
+CCompileC build/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsAction.o /Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s368376311.306814
+e368376311.473988
+r0
+xCompileC
+xbuild/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsAction.o
+x/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:8:
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.h:8:39: error: cannot find interface declaration for 'QSActionProvider', superclass of 'QSProjectsActionProvider'
+o@interface QSProjectsActionProvider : QSActionProvider
+o~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:12:4: error: expected a type
+o- (QSObject *)performActionOnObject:(QSObject *)dObject{
+o   ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:12:38: error: expected a type
+o- (QSObject *)performActionOnObject:(QSObject *)dObject{
+o                                     ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:14:2: error: use of undeclared identifier 'NSURL'
+o        NSURL *projectUrl = [dObject objectForMeta:@"url"];
+o        ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:14:9: error: use of undeclared identifier 'projectUrl'
+o        NSURL *projectUrl = [dObject objectForMeta:@"url"];
+o               ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:14:22: warning: instance method '-objectForMeta:' not found (return type defaults to 'id')
+o        NSURL *projectUrl = [dObject objectForMeta:@"url"];
+o                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:15:2: error: use of undeclared identifier 'NSMutableString'
+o        NSMutableString *projectName = [dObject objectForMeta:@"name"];
+o        ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:15:19: error: use of undeclared identifier 'projectName'
+o        NSMutableString *projectName = [dObject objectForMeta:@"name"];
+o                         ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:15:33: warning: instance method '-objectForMeta:' not found (return type defaults to 'id')
+o        NSMutableString *projectName = [dObject objectForMeta:@"name"];
+o                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:16:2: error: use of undeclared identifier 'NSMutableString'
+o        NSMutableString *folderName;
+o        ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:16:19: error: use of undeclared identifier 'folderName'
+o        NSMutableString *folderName;
+o                         ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:17:2: error: use of undeclared identifier 'NSMutableString'
+o        NSMutableString *projectPath;
+o        ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:17:19: error: use of undeclared identifier 'projectPath'
+o        NSMutableString *projectPath;
+o                         ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:18:2: error: use of undeclared identifier 'NSString'
+o        NSString *selectedFolder = @"";
+o        ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:18:12: error: use of undeclared identifier 'selectedFolder'
+o        NSString *selectedFolder = @"";
+o                  ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:20:2: error: use of undeclared identifier 'projectPath'
+o        projectPath = [NSMutableString stringWithString:[projectUrl path]];
+o        ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:20:17: error: use of undeclared identifier 'NSMutableString'
+o        projectPath = [NSMutableString stringWithString:[projectUrl path]];
+o                       ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:22:7: warning: instance method '-objectForMeta:' not found (return type defaults to 'id')
+o        if ([[dObject objectForMeta:@"type"] isEqualToString: @"project"]) {
+o             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:22:6: warning: instance method '-isEqualToString:' not found (return type defaults to 'id')
+o        if ([[dObject objectForMeta:@"type"] isEqualToString: @"project"]) {
+o            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:27:3: error: use of undeclared identifier 'NSArray'
+o                NSArray *items = [[NSFileManager defaultManager]
+o                ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:27:12: error: use of undeclared identifier 'items'
+o                NSArray *items = [[NSFileManager defaultManager]
+o                         ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:27:22: error: use of undeclared identifier 'NSFileManager'
+o                NSArray *items = [[NSFileManager defaultManager]
+o                                   ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:33:8: error: use of undeclared identifier 'NSURL'
+o                for (NSURL *url in items) {
+o                     ^
+ofatal error: too many errors emitted, stopping now [-ferror-limit=]
+o4 warnings and 20 errors generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.mb1a64ef7f9f4b541^6c5e79f7f9f4b541^-5558"In file included from /Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:8:/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.h:8:39: error: cannot find interface declaration for 'QSActionProvider', superclass of 'QSProjectsActionProvider'@interface QSProjectsActionProvider : QSActionProvider~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:12:4: error: expected a type- (QSObject *)performActionOnObject:(QSObject *)dObject{   ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:12:38: error: expected a type- (QSObject *)performActionOnObject:(QSObject *)dObject{                                     ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:14:2: error: use of undeclared identifier 'NSURL'        NSURL *projectUrl = [dObject objectForMeta:@"url"];        ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:14:9: error: use of undeclared identifier 'projectUrl'        NSURL *projectUrl = [dObject objectForMeta:@"url"];               ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:14:22: warning: instance method '-objectForMeta:' not found (return type defaults to 'id')        NSURL *projectUrl = [dObject objectForMeta:@"url"];                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:15:2: error: use of undeclared identifier 'NSMutableString'        NSMutableString *projectName = [dObject objectForMeta:@"name"];        ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:15:19: error: use of undeclared identifier 'projectName'        NSMutableString *projectName = [dObject objectForMeta:@"name"];                         ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:15:33: warning: instance method '-objectForMeta:' not found (return type defaults to 'id')        NSMutableString *projectName = [dObject objectForMeta:@"name"];                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:16:2: error: use of undeclared identifier 'NSMutableString'        NSMutableString *folderName;        ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:16:19: error: use of undeclared identifier 'folderName'        NSMutableString *folderName;                         ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:17:2: error: use of undeclared identifier 'NSMutableString'        NSMutableString *projectPath;        ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:17:19: error: use of undeclared identifier 'projectPath'        NSMutableString *projectPath;                         ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:18:2: error: use of undeclared identifier 'NSString'        NSString *selectedFolder = @"";        ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:18:12: error: use of undeclared identifier 'selectedFolder'        NSString *selectedFolder = @"";                  ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:20:2: error: use of undeclared identifier 'projectPath'        projectPath = [NSMutableString stringWithString:[projectUrl path]];        ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:20:17: error: use of undeclared identifier 'NSMutableString'        projectPath = [NSMutableString stringWithString:[projectUrl path]];                       ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:22:7: warning: instance method '-objectForMeta:' not found (return type defaults to 'id')        if ([[dObject objectForMeta:@"type"] isEqualToString: @"project"]) {             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:22:6: warning: instance method '-isEqualToString:' not found (return type defaults to 'id')        if ([[dObject objectForMeta:@"type"] isEqualToString: @"project"]) {            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:27:3: error: use of undeclared identifier 'NSArray'                NSArray *items = [[NSFileManager defaultManager]                ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:27:12: error: use of undeclared identifier 'items'                NSArray *items = [[NSFileManager defaultManager]                         ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:27:22: error: use of undeclared identifier 'NSFileManager'                NSArray *items = [[NSFileManager defaultManager]                                   ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m:33:8: error: use of undeclared identifier 'NSURL'                for (NSURL *url in items) {                     ^fatal error: too many errors emitted, stopping now [-ferror-limit=]4 warnings and 20 errors generated.-0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m0000000000000000^2403"CompileC build/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsAction.o Projects/ProjectsAction.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/WebServer/Projects/quicksilver.projects/Projects    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -I/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Projects.build/Release/Projects.build/Projects.hmap -I/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Projects.build/Release/Projects.build/DerivedSources/i386 -I/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Projects.build/Release/Projects.build/DerivedSources -F/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Release -MMD -MT dependencies -MF /Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsAction.d --serialize-diagnostics /Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsAction.dia -c /Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsAction.m -o /Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsAction.o36"8A645F6F-F0CC-4B1D-9ECD-DB55F15457E6-
+
+CCompileC build/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsSource.o /Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s368376311.307403
+e368376311.373188
+r0
+xCompileC
+xbuild/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsSource.o
+x/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:8:
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.h:10:31: error: cannot find interface declaration for 'QSObjectSource', superclass of 'QSProjectsSource'
+o@interface QSProjectsSource : QSObjectSource
+o~~~~~~~~~~~~~~~~~~~~~~~~~~~   ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:12:4: error: expected a type
+o- (BOOL)indexIsValidFromDate:(NSDate *)indexDate forEntry:(NSDictionary *)theEntry
+o   ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:12:31: error: expected a type
+o- (BOOL)indexIsValidFromDate:(NSDate *)indexDate forEntry:(NSDictionary *)theEntry
+o                              ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:12:60: error: expected a type
+o- (BOOL)indexIsValidFromDate:(NSDate *)indexDate forEntry:(NSDictionary *)theEntry
+o                                                           ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:17:4: error: expected a type
+o- (NSImage *)iconForEntry:(NSDictionary *)dict
+o   ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:17:28: error: expected a type
+o- (NSImage *)iconForEntry:(NSDictionary *)dict
+o                           ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:22:4: error: expected a type
+o- (NSArray *) objectsForEntry:(NSDictionary *)theEntry
+o   ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:22:32: error: expected a type
+o- (NSArray *) objectsForEntry:(NSDictionary *)theEntry
+o                               ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:62:4: error: expected a type
+o- (BOOL)objectHasChildren:(QSObject *)object
+o   ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:62:28: error: expected a type
+o- (BOOL)objectHasChildren:(QSObject *)object
+o                           ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:67:4: error: expected a type
+o- (BOOL)loadChildrenForObject:(QSObject *)object
+o   ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:67:32: error: expected a type
+o- (BOOL)loadChildrenForObject:(QSObject *)object
+o                               ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:14:9: error: use of undeclared identifier 'NO'
+o        return NO;
+o               ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:19:9: error: use of undeclared identifier 'nil'
+o        return nil;
+o               ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:25:5: error: use of undeclared identifier 'QSObject'
+o        QSObject *newObject;
+o        ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:25:15: error: use of undeclared identifier 'newObject'
+o        QSObject *newObject;
+o                  ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:26:2: error: use of undeclared identifier 'NSURL'
+o        NSURL *rootUrl = [NSURL fileURLWithPath:@"/Volumes/WebServer/Projects/"];
+o        ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:26:9: error: use of undeclared identifier 'rootUrl'
+o        NSURL *rootUrl = [NSURL fileURLWithPath:@"/Volumes/WebServer/Projects/"];
+o               ^
+o/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:26:20: error: use of undeclared identifier 'NSURL'
+o        NSURL *rootUrl = [NSURL fileURLWithPath:@"/Volumes/WebServer/Projects/"];
+o                          ^
+ofatal error: too many errors emitted, stopping now [-ferror-limit=]
+o20 errors generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.mc9c74ef7f9f4b541^029f5ff7f9f4b541^-4000"In file included from /Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:8:/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.h:10:31: error: cannot find interface declaration for 'QSObjectSource', superclass of 'QSProjectsSource'@interface QSProjectsSource : QSObjectSource~~~~~~~~~~~~~~~~~~~~~~~~~~~   ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:12:4: error: expected a type- (BOOL)indexIsValidFromDate:(NSDate *)indexDate forEntry:(NSDictionary *)theEntry   ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:12:31: error: expected a type- (BOOL)indexIsValidFromDate:(NSDate *)indexDate forEntry:(NSDictionary *)theEntry                              ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:12:60: error: expected a type- (BOOL)indexIsValidFromDate:(NSDate *)indexDate forEntry:(NSDictionary *)theEntry                                                           ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:17:4: error: expected a type- (NSImage *)iconForEntry:(NSDictionary *)dict   ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:17:28: error: expected a type- (NSImage *)iconForEntry:(NSDictionary *)dict                           ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:22:4: error: expected a type- (NSArray *) objectsForEntry:(NSDictionary *)theEntry   ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:22:32: error: expected a type- (NSArray *) objectsForEntry:(NSDictionary *)theEntry                               ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:62:4: error: expected a type- (BOOL)objectHasChildren:(QSObject *)object   ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:62:28: error: expected a type- (BOOL)objectHasChildren:(QSObject *)object                           ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:67:4: error: expected a type- (BOOL)loadChildrenForObject:(QSObject *)object   ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:67:32: error: expected a type- (BOOL)loadChildrenForObject:(QSObject *)object                               ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:14:9: error: use of undeclared identifier 'NO'        return NO;               ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:19:9: error: use of undeclared identifier 'nil'        return nil;               ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:25:5: error: use of undeclared identifier 'QSObject'        QSObject *newObject;        ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:25:15: error: use of undeclared identifier 'newObject'        QSObject *newObject;                  ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:26:2: error: use of undeclared identifier 'NSURL'        NSURL *rootUrl = [NSURL fileURLWithPath:@"/Volumes/WebServer/Projects/"];        ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:26:9: error: use of undeclared identifier 'rootUrl'        NSURL *rootUrl = [NSURL fileURLWithPath:@"/Volumes/WebServer/Projects/"];               ^/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:26:20: error: use of undeclared identifier 'NSURL'        NSURL *rootUrl = [NSURL fileURLWithPath:@"/Volumes/WebServer/Projects/"];                          ^fatal error: too many errors emitted, stopping now [-ferror-limit=]20 errors generated.20(36%IDEClangDiagnosticActivityLogMessage2@88"Cannot find interface declaration for 'QSObjectSource', superclass of 'QSProjectsSource'-368376311#18446744073709551615#0#1(2@108"In file included from /Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m:8:-368376311#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^7#8#7#8#96#0#21"Clang LLVM 1.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.h0000000000000000^9#30#9#30#160#0#14"Semantic Issue1(3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.h0000000000000000^9#0#9#27#130#11#-2@15"Expected a type-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^11#3#11#3#153#0#11"Parse Issue--2@15"Expected a type-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^11#30#11#30#180#0#11"Parse Issue--2@15"Expected a type-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^11#59#11#59#209#0#11"Parse Issue--2@15"Expected a type-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^16#3#16#3#253#0#11"Parse Issue--2@15"Expected a type-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^16#27#16#27#277#0#11"Parse Issue--2@15"Expected a type-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^21#3#21#3#318#0#11"Parse Issue--2@15"Expected a type-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^21#31#21#31#346#0#11"Parse Issue--2@15"Expected a type-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^61#3#61#3#1485#0#11"Parse Issue--2@15"Expected a type-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^61#27#61#27#1509#0#11"Parse Issue--2@15"Expected a type-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^66#3#66#3#1548#0#11"Parse Issue--2@15"Expected a type-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^66#31#66#31#1576#0#11"Parse Issue--2@33"Use of undeclared identifier 'NO'-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^13#8#13#8#243#0#14"Semantic Issue--2@34"Use of undeclared identifier 'nil'-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^18#8#18#8#307#0#14"Semantic Issue--2@39"Use of undeclared identifier 'QSObject'-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^24#4#24#4#377#0#14"Semantic Issue--2@40"Use of undeclared identifier 'newObject'-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^24#14#24#14#387#0#14"Semantic Issue--2@36"Use of undeclared identifier 'NSURL'-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^25#1#25#1#399#0#14"Semantic Issue--2@38"Use of undeclared identifier 'rootUrl'-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^25#8#25#8#406#0#14"Semantic Issue--2@36"Use of undeclared identifier 'NSURL'-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic3@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^25#19#25#19#417#0#14"Semantic Issue--2@37"Too many errors emitted, stopping now-368376311#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic-20"Clang LLVM 1.0 Error--0#0#0#-19%DVTDocumentLocation4@99"file://localhost/Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m0000000000000000^2403"CompileC build/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsSource.o Projects/ProjectsSource.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Volumes/WebServer/Projects/quicksilver.projects/Projects    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -I/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Projects.build/Release/Projects.build/Projects.hmap -I/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Projects.build/Release/Projects.build/DerivedSources/i386 -I/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Projects.build/Release/Projects.build/DerivedSources -F/Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Release -MMD -MT dependencies -MF /Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsSource.d --serialize-diagnostics /Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsSource.dia -c /Volumes/WebServer/Projects/quicksilver.projects/Projects/Projects/ProjectsSource.m -o /Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Projects.build/Release/Projects.build/Objects-normal/i386/ProjectsSource.o36"CD1B328E-7D7D-4797-B62F-CD9498D9F582-
+
+CCopyStringsFile /Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Release/Projects.bundle/Contents/Resources/en.lproj/InfoPlist.strings Projects/en.lproj/InfoPlist.strings
+r0
+
+CLd /Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Release/Projects.bundle/Contents/MacOS/Projects normal i386
+r0
+
+CTouch /Volumes/WebServer/Projects/quicksilver.projects/Projects/build/Release/Projects.bundle
+r0
+
