@@ -21,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>5</string>
+	<string>6</string>
 	<key>QSActions</key>
 	<dict>
 		<key>Edit Folder</key>
@@ -62,6 +62,8 @@
 		<dict>
 			<key>ID</key>
 			<string>QSProjectsFolder</string>
+			<key>enabled</key>
+			<true/>
 			<key>icon</key>
 			<string>com.macromates.textmate</string>
 			<key>name</key>
