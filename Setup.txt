@@ -1,0 +1,37 @@
+Close currently running QuickSilver
+
+Rename Library folder
+	~/Library/Application Support/Quicksilver
+
+If it exists, delete the folder:
+	/tmp/QS/
+
+Clone the repository from GitHub with:
+	git clone --recursive git@github.com:quicksilver/Quicksilver.git /Volumes/WebServer/Projects/quicksilver.projects/Quicksilver/Quicksilver
+
+Will probably need to move the contents of the ./Quicksilver/ sub-folder.
+
+Open
+	/quicksilver.projects/Quicksilver/Quicksilver/Quicksilver.xcodeproj
+
+Select "Quicksilver Distribution > My Mac 64-bit",
+
+Then open again and select "Edit Scheme"... choose the Build Configuration "Debug" and Executable "Quicksilver.app"
+
+Run "debug" version of Quicksilver and quit.
+
+Run "release" version of Quicksilver, and quit.
+	/private/tmp/QS/build/Release/Quicksilver.app
+
+Open
+	/quicksilver.projects/Projects/Projects.xcodeproj
+
+Set its Build Configuration to "Debug".
+
+Run and check it lists "Projects" in the Catalog > Plugins panel.
+
+Any complaints, check for breakpoints.
+
+For final version, compile, and find path using symlink at:
+	/private/tmp/QS/build/Release/Projects.qsplugin
+
