@@ -130,7 +130,7 @@
 		441EFE9815E5025100F88C5B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Craig Francis";
 			};
 			buildConfigurationList = 441EFE9B15E5025100F88C5B /* Build configuration list for PBXProject "Projects" */;
@@ -205,6 +205,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 441EFEAF15E5025100F88C5B /* Debug.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = /Quicksilver.app/Contents/PlugIns;
 				QS_APP_CONTENTS_FOLDER = "$(CONFIGURATION_BUILD_DIR)/Quicksilver.app/Contents";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -215,6 +220,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 441EFEB315E5025100F88C5B /* Release.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INSTALL_PATH = /Quicksilver.app/Contents/PlugIns;
 				QS_APP_CONTENTS_FOLDER = "$(CONFIGURATION_BUILD_DIR)/Quicksilver.app/Contents";
 			};
@@ -224,6 +234,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 441EFEB115E5025100F88C5B /* QSPlugIn.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				INSTALL_PATH = /Quicksilver.app/Contents/PlugIns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				QS_APP_CONTENTS_FOLDER = "$(CONFIGURATION_BUILD_DIR)/Quicksilver.app/Contents";
@@ -234,6 +245,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 441EFEB115E5025100F88C5B /* QSPlugIn.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				INSTALL_PATH = /Quicksilver.app/Contents/PlugIns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

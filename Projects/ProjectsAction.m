@@ -16,7 +16,7 @@
 	NSMutableString *folderName;
 	NSMutableString *projectPath;
 	NSString *selectedFolder = @"";
-		
+	
 	projectPath = [NSMutableString stringWithString:[projectUrl path]];
 		
 	if ([[dObject objectForMeta:@"type"] isEqualToString: @"project"]) {
@@ -63,8 +63,12 @@
 	// NSLog(@"Path: %@", projectPath);
 	// NSLog(@"Parent: %@", [dObject objectForMeta:@"type"]);
 
-	if (true) { // TextMate 1
+	if (true) {
+		
+		[[NSWorkspace sharedWorkspace] openFile:projectPath withApplication:@"TextMate"];
 
+	} else { // TextMate 1
+		
 		NSMutableString *tempFilePath;
 		NSString *tempDirPath;
 		NSMutableString *tempXml;
@@ -126,13 +130,10 @@
 
 		// NSLog(@"Temp: %@", tempFilePath);
 		
-	} else {
-		
-		[[NSWorkspace sharedWorkspace] openFile:projectPath withApplication:@"TextMate"];
-		
 	}
 
 	return nil;
 	
 }
+
 @end
